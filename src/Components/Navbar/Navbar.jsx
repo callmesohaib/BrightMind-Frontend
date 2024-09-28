@@ -21,6 +21,7 @@ const Navbar = () => {
 
   const openLoginModal = () => {
     setIsSignupModalOpen(false);
+    setNavActive(false)
     setIsLoginModalOpen(true);
   };
 
@@ -30,6 +31,7 @@ const Navbar = () => {
 
   const openSignupModal = () => {
     setIsLoginModalOpen(false);
+    setNavActive(false)
     setIsSignupModalOpen(true);
   };
 
