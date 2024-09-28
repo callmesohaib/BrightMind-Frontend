@@ -21,7 +21,7 @@ const Courses = ({ openLoginModal }) => {
 
   const fetchCourses = async () => {
     try {
-      const response = await fetch(`${API}/api/data/courses`);
+      const response = await fetch(`${API}api/data/courses`);
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }

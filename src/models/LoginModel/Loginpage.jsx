@@ -19,7 +19,7 @@ const LoginModal = ({ onClose, openSignupModal, onLoginSuccess }) => {
   const submitForm = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`${API}/api/auth/login`, {
+      const response = await fetch(`${API}api/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

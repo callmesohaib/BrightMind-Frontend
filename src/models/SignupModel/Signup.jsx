@@ -17,7 +17,7 @@ const SignupModal = ({ onClose, openLoginModal }) => {
 
   const submitForm = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${API}/api/auth/register`, {
+    const response = await fetch(`${API}api/auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
