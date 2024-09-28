@@ -3,13 +3,13 @@ import { NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import LoginModal from "../../models/LoginModel/Loginpage";
 import SignupModal from "../../models/SignupModel/Signup";
-import "boxicons"; // Import Boxicons if needed
+import "boxicons"; 
 
 const Navbar = () => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
   const [islogin, setIsLogin] = useState(false);
-  const [navActive, setNavActive] = useState(false); // State to control nav visibility
+  const [navActive, setNavActive] = useState(false); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -43,20 +43,21 @@ const Navbar = () => {
 
   const handleLoginSuccess = () => {
     setIsLogin(true);
-    closeLoginModal();
+    closeLoginModal(); 
   };
 
   const handleCoursesClick = (e) => {
     const token = localStorage.getItem("authToken");
 
     if (!token) {
-      e.preventDefault();
-      openLoginModal();
+      e.preventDefault(); 
+      openLoginModal(); 
     }
+    setNavActive(false);
   };
 
   const toggleNav = () => {
-    setNavActive(!navActive);
+    setNavActive(!navActive); 
   };
 
   return (
@@ -66,7 +67,7 @@ const Navbar = () => {
           <div className="brand">BrightMind.</div>
 
           <span className="menu-btn" onClick={toggleNav}>
-            <i className="bx bx-menu"></i> {/* Boxicon menu icon */}
+            <i className="bx bx-menu"></i> {}
           </span>
 
           <ul className={`nav-links ${navActive ? "active" : ""}`}>
@@ -74,7 +75,7 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? "active" : "")}
-                onClick={() => setNavActive(false)} // Close nav on link click
+                onClick={() => setNavActive(false)} 
               >
                 Home
               </NavLink>
@@ -83,7 +84,7 @@ const Navbar = () => {
               <NavLink
                 to="/about"
                 className={({ isActive }) => (isActive ? "active" : "")}
-                onClick={() => setNavActive(false)} // Close nav on link click
+                onClick={() => setNavActive(false)} 
               >
                 About
               </NavLink>
@@ -91,9 +92,8 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/courses"
-                onClick={handleCoursesClick}
+                onClick={handleCoursesClick} 
                 className={({ isActive }) => (isActive ? "active" : "")}
-                onClick={() => setNavActive(false)} // Close nav on link click
               >
                 Courses
               </NavLink>
@@ -119,16 +119,20 @@ const Navbar = () => {
         </div>
       </section>
 
+      {}
       {isLoginModalOpen && (
         <LoginModal
           onClose={closeLoginModal}
           onLoginSuccess={handleLoginSuccess}
+          openSignupModal={openSignupModal} 
         />
       )}
+
+      {}
       {isSignupModalOpen && (
         <SignupModal
           onClose={closeSignupModal}
-          openLoginModal={openLoginModal}
+          openLoginModal={openLoginModal} 
         />
       )}
     </>

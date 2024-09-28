@@ -9,6 +9,8 @@ const LoginModal = ({ onClose, openSignupModal, onLoginSuccess }) => {
     password: "",
   });
   const API = import.meta.env.VITE_BRIGHT_URL;
+
+  
   useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => {
@@ -32,10 +34,8 @@ const LoginModal = ({ onClose, openSignupModal, onLoginSuccess }) => {
       if (response.ok) {
         toast.success("Login Successful");
         localStorage.setItem("authToken", data.token);
-
-        onLoginSuccess();
-
-        onClose();
+        onLoginSuccess(); 
+        onClose(); 
       } else {
         toast.error(data.msg || data.message);
       }
@@ -49,8 +49,9 @@ const LoginModal = ({ onClose, openSignupModal, onLoginSuccess }) => {
   };
 
   const handleSignupRedirect = () => {
-    onClose();
+    
     openSignupModal();
+    onClose();
   };
 
   return (
