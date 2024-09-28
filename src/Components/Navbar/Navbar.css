@@ -67,11 +67,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-@media (max-width: 768px) {
 
-  .navbar{
+@media (max-width: 768px) {
+  .navbar {
     width: 95%;
   }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -87,7 +88,8 @@
   .nav-links.active {
     display: flex;
   }
-  .brand{
+
+  .brand {
     font-size: 1.3rem;
   }
 
@@ -96,13 +98,27 @@
   }
 
   .btns {
-    /* flex-direction: column; */
     gap: 0.5rem;
   }
 
-  .btns .btn {
+  
+  .btns .btn, .nav-links li button {
     width: 100%;
-    padding: 0.4rem;
-    font-size: 1rem;
+    padding: 0.8rem 0;
+    text-align: left;
+    font-size: 1.2rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-links li button:focus {
+    outline: none;
+  }
+
+  .btns .btn {
+    width: auto;
+    min-width: 6rem;
   }
 }

@@ -100,26 +100,28 @@ const Navbar = () => {
                 Courses
               </NavLink>
             </li>
-          </ul>
 
-          <div className="btns">
-            {islogin ? (
-              <button className="loginBtn btn" onClick={Logout}>
-                Logout
-              </button>
-            ) : (
-              <>
-                <button className="loginBtn btn" onClick={openLoginModal}>
-                  Login
+            {/* Moved buttons into nav-links for mobile view */}
+            <li>
+              {islogin ? (
+                <button className="loginBtn btn" onClick={Logout}>
+                  Logout
                 </button>
-                <button className="signupBtn btn" onClick={openSignupModal}>
-                  Sign Up
-                </button>
-              </>
-            )}
-          </div>
+              ) : (
+                <>
+                  <button className="loginBtn btn" onClick={openLoginModal}>
+                    Login
+                  </button>
+                  <button className="signupBtn btn" onClick={openSignupModal}>
+                    Sign Up
+                  </button>
+                </>
+              )}
+            </li>
+          </ul>
         </div>
       </section>
+
       {isLoginModalOpen && (
         <LoginModal
           onClose={closeLoginModal}
