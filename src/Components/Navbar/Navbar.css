@@ -1,6 +1,6 @@
-/* Updated CSS */
 
-/* Navbar general styling */
+
+
 .Navbar {
   display: flex;
   justify-content: center;
@@ -30,13 +30,13 @@
   color: var(--primary-color);
 }
 
-/* Flexbox alignment fix */
+
 .nav-links {
   display: flex;
   list-style: none;
   gap: 2rem;
   font-size: 1.3rem;
-  justify-content: flex-end; /* Align to the right */
+  justify-content: flex-end; 
   flex-grow: 1;
   font-weight: 500;
 }
@@ -53,10 +53,10 @@
   text-decoration: underline;
 }
 
-/* Login/Signup Button container styling */
+
 .btns {
   display: flex;
-  gap: 1rem; /* Reduce gap for desktop */
+  gap: 1rem; 
 }
 
 .btns .btn {
