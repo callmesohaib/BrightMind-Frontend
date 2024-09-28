@@ -1,0 +1,57 @@
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000005e;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+}
+
+.navbar {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.3rem;
+  justify-content: center;
+  flex-grow: 1;
+  font-weight: 500;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.btns .btn {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 6rem;
+}
+
+.nav-links li a.active {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: underline;
+}

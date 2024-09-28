@@ -1,0 +1,345 @@
+{
+    "questions": [
+        {
+            "question": "What is the output of print(type([]) is list)?",
+            "options": [
+                "True",
+                "False",
+                "None",
+                "TypeError"
+            ],
+            "answer": "True",
+            "category": "Python"
+        },
+        {
+            "question": "What will be the output of the following code: print('Hello'[::-1])?",
+            "options": [
+                "Hello",
+                "olleH",
+                "None",
+                "Error"
+            ],
+            "answer": "olleH",
+            "category": "Python"
+        },
+        {
+            "question": "Which of the following is not a valid Python data type?",
+            "options": [
+                "list",
+                "tuple",
+                "set",
+                "array"
+            ],
+            "answer": "array",
+            "category": "Python"
+        },
+        {
+            "question": "What is the output of len([1, 2, 3])?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "None"
+            ],
+            "answer": "3",
+            "category": "Python"
+        },
+        {
+            "question": "Which of the following keywords is used to create a function in Python?",
+            "options": [
+                "function",
+                "def",
+                "lambda",
+                "func"
+            ],
+            "answer": "def",
+            "category": "Python"
+        },
+        {
+            "question": "Which of the following is used to define a block of code in Python?",
+            "options": [
+                "Brackets",
+                "Indentation",
+                "Parentheses",
+                "Quotes"
+            ],
+            "answer": "Indentation",
+            "category": "Python"
+        },
+        {
+            "question": "What is the output of the following code: [1, 2, 3].append([4, 5])?",
+            "options": [
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "answer": "4",
+            "category": "Python"
+        },
+        {
+            "question": "What is the correct syntax for defining an anonymous function in Python?",
+            "options": [
+                "lambda x: x + 2",
+                "function x: x + 2",
+                "def x: x + 2",
+                "anonymous x: x + 2"
+            ],
+            "answer": "lambda x: x + 2",
+            "category": "Python"
+        },
+        {
+            "question": "How do you create a set in Python?",
+            "options": [
+                "set = {}",
+                "set = ()",
+                "set = []",
+                "set = set()"
+            ],
+            "answer": "set = set()",
+            "category": "Python"
+        },
+        {
+            "question": "Which function can be used to get the length of a string in Python?",
+            "options": [
+                "length()",
+                "len()",
+                "size()",
+                "count()"
+            ],
+            "answer": "len()",
+            "category": "Python"
+        },
+        {
+            "question": "What is the result of 2 ** 3 ** 2 in Python?",
+            "options": [
+                "64",
+                "512",
+                "8",
+                "None"
+            ],
+            "answer": "512",
+            "category": "Python"
+        },
+        {
+            "question": "What is the output of [1, 2, 3][1:] in Python?",
+            "options": [
+                "[1]",
+                "[20, 30]",
+                "[30]",
+                "[20, 30]"
+            ],
+            "answer": "[2, 3]",
+            "category": "Python"
+        },
+        {
+            "question": "What does the len() function return when applied to a dictionary?",
+            "options": [
+                "Number of keys",
+                "Number of values",
+                "Number of key-value pairs",
+                "None"
+            ],
+            "answer": "Number of key-value pairs",
+            "category": "Python"
+        },
+        {
+            "question": "Which keyword is used to start a loop in Python?",
+            "options": [
+                "for",
+                "while",
+                "both a and b",
+                "do-while"
+            ],
+            "answer": "both a and b",
+            "category": "Python"
+        },
+        {
+            "question": "What is the output of the following code: print(5 < 10 and 5 > 0)?",
+            "options": [
+                "True",
+                "False",
+                "None",
+                "Error"
+            ],
+            "answer": "True",
+            "category": "Python"
+        },
+        {
+            "question": "How do you start a comment in Python?",
+            "options": [
+                "//",
+                "#",
+                "/*",
+                "<!"
+            ],
+            "answer": "#",
+            "category": "Python"
+        },
+        {
+            "question": "What is the result of 2 + 3 * 5 in Python?",
+            "options": [
+                "25",
+                "13",
+                "30",
+                "None"
+            ],
+            "answer": "17",
+            "category": "Python"
+        },
+        {
+            "question": "What is the correct way to import only the sqrt function from the math module?",
+            "options": [
+                "import math.sqrt",
+                "from math import sqrt",
+                "import sqrt",
+                "from math import *"
+            ],
+            "answer": "from math import sqrt",
+            "category": "Python"
+        },
+        {
+            "question": "What is the output of the following code: [1, 2, 3] * 2?",
+            "options": [
+                "[1, 2, 3, 1, 2, 3]",
+                "[2, 4, 6]",
+                "[1, 2, 3]",
+                "None"
+            ],
+            "answer": "[1, 2, 3, 1, 2, 3]",
+            "category": "Python"
+        },
+        {
+            "question": "What will be the output of the following code: {1, 2, 3}.add(5)?",
+            "options": [
+                "{1, 2, 3}",
+                "{1, 2, 3, 5}",
+                "[1, 2, 3, 5]",
+                "Error"
+            ],
+            "answer": "{1, 2, 3, 5}",
+            "category": "Python"
+        },
+        {
+            "question": "What is the output of the following code: cout << 'Hello World';?",
+            "options": [
+                "Hello World",
+                "Error",
+                "None",
+                "HelloWorld"
+            ],
+            "answer": "Hello World",
+            "category": "C++"
+        },
+        {
+            "question": "Which of the following is a valid C++ data type?",
+            "options": [
+                "int",
+                "float",
+                "char",
+                "All of the above"
+            ],
+            "answer": "All of the above",
+            "category": "C++"
+        },
+        {
+            "question": "What is the correct syntax to declare a variable in C++?",
+            "options": [
+                "int x;",
+                "x = int;",
+                "var x;",
+                "declare x: int"
+            ],
+            "answer": "int x;",
+            "category": "C++"
+        },
+        {
+            "question": "Which operator is used for comments in C++?",
+            "options": [
+                "//",
+                "#",
+                "/* */",
+                "Both a and c"
+            ],
+            "answer": "Both a and c",
+            "category": "C++"
+        },
+        {
+            "question": "How do you create a class in C++?",
+            "options": [
+                "class MyClass {}",
+                "class MyClass()",
+                "MyClass class {}",
+                "None of the above"
+            ],
+            "answer": "class MyClass {}",
+            "category": "C++"
+        },
+        {
+            "question": "Which of the following is used to include a library in C++?",
+            "options": [
+                "#include <iostream>",
+                "#include iostream",
+                "import iostream",
+                "using namespace std"
+            ],
+            "answer": "#include <iostream>",
+            "category": "C++"
+        },
+        {
+            "question": "What is the output of the following code: cout << 1 + 2 * 3;?",
+            "options": [
+                "7",
+                "9",
+                "6",
+                "Error"
+            ],
+            "answer": "7",
+            "category": "C++"
+        },
+        {
+            "question": "Which of the following statements is used to exit a loop in C++?",
+            "options": [
+                "exit",
+                "break",
+                "stop",
+                "return"
+            ],
+            "answer": "break",
+            "category": "C++"
+        },
+        {
+            "question": "What is the purpose of the 'return 0;' statement in C++?",
+            "options": [
+                "To return a value from a function",
+                "To indicate successful completion",
+                "Both a and b",
+                "None of the above"
+            ],
+            "answer": "Both a and b",
+            "category": "C++"
+        },
+        {
+            "question": "What is the default access specifier for members of a class in C++?",
+            "options": [
+                "public",
+                "private",
+                "protected",
+                "None of the above"
+            ],
+            "answer": "private",
+            "category": "C++"
+        },
+        {
+            "question": "How do you declare a pointer in C++?",
+            "options": [
+                "int *ptr;",
+                "int ptr;",
+                "ptr int;",
+                "None of the above"
+            ],
+            "answer": "int *ptr;",
+            "category": "C++"
+        }
+    ]
+}

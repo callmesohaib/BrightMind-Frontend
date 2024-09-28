@@ -1,0 +1,93 @@
+.about {
+  color: blanchedalmond;
+}
+
+.about-container {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("../../assets/images/aboutBoyimg.webp") no-repeat center center/cover;
+  width: 100%;
+}
+
+.about-content {
+  width: 50%;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.about-content h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: left;
+}
+
+.about-lines {
+  border-left: 1px solid blanchedalmond;
+  padding-left: 2rem;
+}
+
+.about-lines p {
+  text-align: left;
+  line-height: 1.6rem;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    justify-content: center;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .about-content {
+    width: 70%;
+    margin-top: 2rem;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-lines p {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    justify-content: center;
+    padding: 2rem 0.5rem;
+    min-height: 100vh;
+    flex-direction: column;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+      url("../../assets/images/aboutImgmbl.jpg") no-repeat center center/cover;
+  }
+
+  .about-content {
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+  }
+
+  .about-lines {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .about-lines p {
+    margin-left: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
