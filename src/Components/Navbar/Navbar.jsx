@@ -114,12 +114,13 @@ const Navbar = () => {
                 Courses
               </NavLink>
             </li>
-
             <li>
               {islogin ? (
-                <button className="loginBtn btn" onClick={Logout}>
-                  Logout
-                </button>
+                <div className="btns">
+                  <button className="loginBtn btn" onClick={Logout}>
+                    Logout
+                  </button>
+                </div>
               ) : (
                 <div className="btns">
                   <button className="loginBtn btn" onClick={openLoginModal}>
