@@ -13,6 +13,9 @@
   height: 4rem;
   z-index: 1004;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 .navbar {
   width: 80%;

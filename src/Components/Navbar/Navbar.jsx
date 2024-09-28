@@ -17,7 +17,14 @@ const Navbar = () => {
     if (token) {
       setIsLogin(true);
     }
-  }, []);
+
+    // Disable scrolling when the nav is active
+    if (navActive) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [navActive]);
 
   const openLoginModal = () => {
     setIsSignupModalOpen(false);
@@ -61,7 +68,12 @@ const Navbar = () => {
   };
 
   const toggleNav = () => {
-    setNavActive(!navActive);
+    // Close modals when the menu is opened
+    if (isLoginModalOpen || isSignupModalOpen) {
+      setIsLoginModalOpen(false);
+      setIsSignupModalOpen(false);
+    }
+    setNavActive(!navActive); // Toggle the nav bar
   };
 
   return (
