@@ -103,7 +103,6 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            {/* Moved buttons into nav-links for mobile view */}
             <li>
               {islogin ? (
                 <button className="loginBtn btn" onClick={Logout}>

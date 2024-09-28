@@ -101,8 +101,8 @@
     gap: 0.5rem;
   }
 
-  
-  .btns .btn, .nav-links li button {
+  .btns .btn,
+  .nav-links li button {
     width: 100%;
     padding: 0.8rem 0;
     text-align: left;
