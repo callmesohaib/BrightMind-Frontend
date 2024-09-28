@@ -20,6 +20,7 @@ const Navbar = () => {
   }, []);
 
   const openLoginModal = () => {
+    setIsSignupModalOpen(false);
     setIsLoginModalOpen(true);
   };
 
@@ -28,6 +29,7 @@ const Navbar = () => {
   };
 
   const openSignupModal = () => {
+    setIsLoginModalOpen(false);
     setIsSignupModalOpen(true);
   };
 
@@ -67,7 +69,7 @@ const Navbar = () => {
           <div className="brand">BrightMind.</div>
 
           <span className="menu-btn" onClick={toggleNav}>
-            <i className="bx bx-menu"></i> 
+            <i className="bx bx-menu"></i>
           </span>
 
           <ul className={`nav-links ${navActive ? "active" : ""}`}>
