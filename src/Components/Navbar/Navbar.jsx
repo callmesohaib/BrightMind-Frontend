@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const openLoginModal = () => {
     setIsSignupModalOpen(false);
-    setNavActive(false)
+    setNavActive(false);
     setIsLoginModalOpen(true);
   };
 
@@ -31,7 +31,7 @@ const Navbar = () => {
 
   const openSignupModal = () => {
     setIsLoginModalOpen(false);
-    setNavActive(false)
+    setNavActive(false);
     setIsSignupModalOpen(true);
   };
 
@@ -105,12 +105,12 @@ const Navbar = () => {
 
             <li>
               {islogin ? (
-                <button className="loginBtn btn" onClick={Logout}>
+               <button className="loginBtn btn" onClick={Logout}>
                   Logout
                 </button>
               ) : (
                 <>
-                  <button className="loginBtn btn" onClick={openLoginModal}>
+                  <button className="loginBtn btn"style={{marginRight: "1rem"}} onClick={openLoginModal}>
                     Login
                   </button>
                   <button className="signupBtn btn" onClick={openSignupModal}>
