@@ -1,3 +1,6 @@
+/* Updated CSS */
+
+/* Navbar general styling */
 .Navbar {
   display: flex;
   justify-content: center;
@@ -24,12 +27,13 @@
   color: var(--primary-color);
 }
 
+/* Flexbox alignment fix */
 .nav-links {
   display: flex;
   list-style: none;
   gap: 2rem;
   font-size: 1.3rem;
-  justify-content: center;
+  justify-content: flex-end; /* Align to the right */
   flex-grow: 1;
   font-weight: 500;
 }
@@ -40,11 +44,17 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.btns {
-  display: flex;
-  gap: 2rem;
+.nav-links li a.active {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: underline;
 }
 
+/* Login/Signup Button container styling */
+.btns {
+  display: flex;
+  gap: 1rem; /* Reduce gap for desktop */
+}
 
 .btns .btn {
   text-align: center;
@@ -52,12 +62,19 @@
   padding: 0.5rem 1rem;
   width: auto;
   min-width: 6rem;
+  cursor: pointer;
+  background: none;
+  border: 1px solid var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: var(--primary-color);
 }
 
-.nav-links li a.active {
-  color: var(--primary-color);
-  font-weight: bold;
-  text-decoration: underline;
+.nav-links {
+  z-index: 1001;
 }
 
 .menu-btn {
@@ -66,9 +83,6 @@
   color: white;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-}
-.loginBtn{
-  background-color: yellow;
 }
 
 @media (max-width: 768px) {
@@ -120,6 +134,10 @@
     outline: none;
   }
 
+  .btns {
+    display: flex;
+    flex-direction: column;
+  }
   .btns .btn {
     width: auto;
     min-width: 6rem;

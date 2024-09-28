@@ -105,18 +105,18 @@ const Navbar = () => {
 
             <li>
               {islogin ? (
-               <button className="loginBtn btn" onClick={Logout}>
+                <button className="loginBtn btn" onClick={Logout}>
                   Logout
                 </button>
               ) : (
-                <>
-                  <button className="loginBtn btn"style={{marginRight: "1rem"}} onClick={openLoginModal}>
+                <div className="btns">
+                  <button className="loginBtn btn" onClick={openLoginModal}>
                     Login
                   </button>
                   <button className="signupBtn btn" onClick={openSignupModal}>
                     Sign Up
                   </button>
-                </>
+                </div>
               )}
             </li>
           </ul>
