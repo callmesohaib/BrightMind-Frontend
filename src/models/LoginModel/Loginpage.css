@@ -80,6 +80,7 @@
 
 @media screen and (max-width: 468px) {
   .login .modal{
+    margin: 0;
     height: 74vh;
   }
 }
