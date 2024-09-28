@@ -10,14 +10,14 @@ const SignupModal = ({ onClose, openLoginModal }) => {
     phone: "",
     password: "",
   });
-
+  const API = import.meta.env.VITE_BRIGHT_URL;
   const inputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const submitForm = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:3000/api/auth/register", {
+    const response = await fetch(`${API}/api/auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

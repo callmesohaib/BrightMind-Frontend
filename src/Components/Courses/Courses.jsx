@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Courses = ({ openLoginModal }) => {
   const [courses, setCourses] = useState([]);
   const navigate = useNavigate();
+  const API = import.meta.env.VITE_BRIGHT_URL;
 
   useEffect(() => {
     const token = localStorage.getItem("authToken");
@@ -20,7 +21,7 @@ const Courses = ({ openLoginModal }) => {
 
   const fetchCourses = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/data/courses");
+      const response = await fetch(`${API}/api/data/courses`);
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
