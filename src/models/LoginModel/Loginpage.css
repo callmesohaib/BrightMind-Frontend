@@ -15,6 +15,7 @@
   height: auto;
   display: block;
   position: absolute;
+  -webkit-tap-highlight-color: transparent;
   top: 5rem;
   left: 63%;
   cursor: pointer;
