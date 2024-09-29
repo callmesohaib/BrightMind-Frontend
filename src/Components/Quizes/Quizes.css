@@ -133,7 +133,7 @@
     width: 1.5rem;
   }
 
-  .btns {
+  .quizes .btns {
     display: flex;
     justify-content: center;
     align-items: center;
