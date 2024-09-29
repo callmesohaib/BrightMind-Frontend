@@ -50,7 +50,7 @@
 }
 
 .quiz-container .cancel {
-  background-color: #fff;
+  background-color: #fff !important;
   color: black;
 }
 
@@ -96,8 +96,9 @@
 .close-modal-btn:hover {
   background-color: #0056b3;
 }
-.cancel {
-  background-color: #fff !important;
+.quizBtns .btn {
+  background-color: var(--primary-color);
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -137,13 +138,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 2rem ;
+    gap: 2rem;
   }
   .quizBtns .btn {
     background-color: var(--primary-color);
     width: 22%;
     text-align: center;
   }
-
-
 }

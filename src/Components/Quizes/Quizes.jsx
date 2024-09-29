@@ -107,7 +107,7 @@ const Quizes = () => {
             <p>Loading quizzes...</p>
           )}
           <div className=" quizBtns btns">
-            <button className="btn" onClick={showResult}>
+            <button className=" submit btn" onClick={showResult}>
               Submit
             </button>
             <button className="cancel btn" onClick={BackNavigate}>
