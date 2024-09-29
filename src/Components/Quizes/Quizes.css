@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #ccf1f0;
-  padding: 1rem; 
+  padding: 1rem;
 }
 
 .quiz-container {
@@ -11,7 +11,6 @@
   flex-direction: column;
   margin: 0 auto;
 }
-
 
 .quiz-box h3 {
   font-family: "Poppins", sans-serif;
@@ -23,8 +22,8 @@
 }
 
 .quiz-container li {
-  display: block; 
-  width: 100%; 
+  display: block;
+  width: 100%;
   padding: 0.5rem;
 }
 
@@ -63,14 +62,13 @@
   background-color: #d4313e;
 }
 
-
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,7 +83,6 @@
   width: 300px;
 }
 
-
 .close-modal-btn {
   margin-top: 15px;
   padding: 8px 16px;
@@ -99,45 +96,54 @@
 .close-modal-btn:hover {
   background-color: #0056b3;
 }
-
-
-
+.cancel {
+  background-color: #fff !important;
+}
 
 @media (max-width: 768px) {
   .quiz-container {
-    width: 90%; 
+    width: 90%;
   }
 
   .quiz-container li {
-    width: 100%; 
+    width: 100%;
   }
 
   .quiz-box {
-    padding: 0.5rem; 
+    padding: 0.5rem;
   }
 }
 
-
 @media (max-width: 480px) {
   .quiz-container {
-    width: 95%; 
-    padding: 0; 
+    width: 95%;
+    padding: 0;
   }
 
   .quiz-box h3 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .quiz-container label {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   .quiz-container input[type="radio"] {
-    width: 1.5rem; 
+    width: 1.5rem;
   }
 
-  .btn {
-    font-size: 0.9rem; 
-    padding: 0.4rem; 
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem ;
   }
+  .quizBtns .btn {
+    background-color: var(--primary-color);
+    width: 22%;
+    text-align: center;
+  }
+
+
 }

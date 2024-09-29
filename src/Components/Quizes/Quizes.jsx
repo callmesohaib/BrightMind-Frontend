@@ -106,7 +106,7 @@ const Quizes = () => {
           ) : (
             <p>Loading quizzes...</p>
           )}
-          <div className="btns">
+          <div className=" quizBtns btns">
             <button className="btn" onClick={showResult}>
               Submit
             </button>
