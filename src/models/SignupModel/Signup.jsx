@@ -3,6 +3,7 @@ import "./Signup.css";
 import { toast } from "react-toastify";
 import cross from "../../assets/images/cross.gif";
 
+
 const SignupModal = ({ onClose, openLoginModal }) => {
   const [formData, setFormData] = useState({
     username: "",
@@ -27,6 +28,8 @@ const SignupModal = ({ onClose, openLoginModal }) => {
     const data = await response.json();
     if (response.ok) {
       toast.success("Success! Your account is ready. You can now log in.");
+      handleLoginRedirect();
+
     } else {
       toast.error(data.message || data.msg);
     }
