@@ -73,7 +73,7 @@ const Navbar = () => {
       setIsLoginModalOpen(false);
       setIsSignupModalOpen(false);
     }
-    setNavActive(!navActive); // Toggle the nav bar
+    setNavActive(!navActive);
   };
 
   return (
